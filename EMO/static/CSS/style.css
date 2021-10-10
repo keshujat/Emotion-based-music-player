@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhaina 2';
+}
+.music_player{
+    position: absolute;
+    width: 150vh;
+    height: 95vh;
+    border: 2px solid black;
+    top: 1%;
+    left: 1%;
+    
+}
+.music{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: 82%;
+    top: 1%;
+    left: 1%;
+    border: 2px solid black;
+    text-align: center;
+}
+.list{
+    display: inline-block;
+    position: absolute;
+    width: 250px;
+    top: 1%;
+    left: 72%;
+    height: 486px;
+    border: 2px solid black;
+    text-align: center;
+}
+.buttons{
+    position: sticky;
+    display: inline-block;
+    border: 2px solid black;
+    width: 90%;
+    height: 13%;
+    top: 82%;
+    bottom: 1%;
+    left: 4.5%;
+    text-align: center;
+}
+
+.camera{
+    position: absolute;
+    width:  380px;
+    height: 360px;
+    left: 71%;
+    top: 1%;
+    border: 2px solid black;
+    text-align: center;
+}
+.options{
+    position: absolute;
+    width: 380px;
+    height: 220px;
+    left: 71%;
+    top: 60%;
+    border: 2px solid black;
+    text-align: center;
+}
