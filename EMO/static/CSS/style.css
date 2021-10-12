@@ -13,7 +13,7 @@
     
 }
 .music{
-    position: relative;
+    position: absolute;
     display: inline-block;
     width: 70%;
     height: 82%;
@@ -21,6 +21,7 @@
     left: 1%;
     border: 2px solid black;
     text-align: center;
+    /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
 }
 .list{
     display: inline-block;
@@ -33,12 +34,12 @@
     text-align: center;
 }
 .buttons{
-    position: sticky;
+    position: absolute;
     display: inline-block;
     border: 2px solid black;
     width: 90%;
     height: 13%;
-    top: 82%;
+    top: 85%;
     bottom: 1%;
     left: 4.5%;
     text-align: center;
@@ -61,4 +62,53 @@
     top: 60%;
     border: 2px solid black;
     text-align: center;
+}
+.mute{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    width: 40px;
+    height: 40px;
+}
+.volume{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    width: 40px;
+    height: 40px;
+}
+.play{
+    position: relative;
+    top: 20%;
+    left: -5%;
+    width: 40px;
+    height: 40px;
+}
+.previous{
+    position: relative;
+    top: 20%;
+    left: 0%;
+    width: 40px;
+    height: 40px;
+}
+.next{
+    position: relative;
+    top: 20%;
+    left: 5%;
+    width: 40px;
+    height: 40px;
+}
+.stop{
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    width: 40px;
+    height: 40px;
+}
+.shuffle{
+    position: absolute;
+    top: 20%;
+    left: 93%;
+    width: 40px;
+    height: 40px;
 }
