@@ -5,7 +5,7 @@
 }
 .music_player{
     position: absolute;
-    width: 150vh;
+    width: 70%;
     height: 95vh;
     border: 2px solid black;
     top: 1%;
@@ -26,10 +26,10 @@
 .list{
     display: inline-block;
     position: absolute;
-    width: 250px;
+    width: 26%;
     top: 1%;
-    left: 72%;
-    height: 486px;
+    left: 72.5%;
+    height: 82%;
     border: 2px solid black;
     text-align: center;
 }
@@ -49,7 +49,7 @@
     position: absolute;
     width:  380px;
     height: 360px;
-    left: 71%;
+    left: 73%;
     top: 1%;
     border: 2px solid black;
     text-align: center;
@@ -57,9 +57,9 @@
 .options{
     position: absolute;
     width: 380px;
-    height: 220px;
-    left: 71%;
-    top: 60%;
+    height: 44%;
+    left: 73%;
+    top: 52%;
     border: 2px solid black;
     text-align: center;
 }
