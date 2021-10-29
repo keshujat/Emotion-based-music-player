@@ -2,113 +2,233 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Baloo Bhaina 2';
+    overflow: hidden;
+     
+}
+#imag{
+    width: 100%;
+    height: 100%;
+   
 }
 .music_player{
     position: absolute;
+    display: grid;
     width: 70%;
     height: 95vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     top: 1%;
     left: 1%;
     
 }
 .music{
     position: absolute;
-    display: inline-block;
+    display: flex;
     width: 70%;
     height: 82%;
     top: 1%;
     left: 1%;
-    border: 2px solid black;
     text-align: center;
+    border-radius: 40px;
+    box-shadow: 1px 8px 14px rgb(37, 36, 36);
+   
     /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
 }
 .list{
     display: inline-block;
+    display: grid;
     position: absolute;
+    border-radius: 40px;
     width: 26%;
     top: 1%;
     left: 72.5%;
     height: 82%;
-    border: 2px solid black;
+    /* border: 2px solid rgb(118, 253, 253); */
     text-align: center;
+    box-shadow: 0px 6px 12px rgb(37, 36, 36);
 }
+#a{
+    cursor: pointer;
+}
+#b{
+    cursor: pointer;
+}
+#c{
+    cursor: pointer;
+}
+#d{
+    cursor: pointer;
+}
+#e{
+    cursor: pointer;
+}
+#f{
+    cursor: pointer;
+}
+#g{
+    cursor: pointer;
+}
+#h{
+    cursor: pointer;
+}
+#i{
+    cursor: pointer;
+}
+#j{
+    cursor: pointer;
+}
+#k{
+    cursor: pointer;
+}
+#l{
+    cursor: pointer;
+}
+#m{
+    cursor: pointer;
+}
+#n{
+    cursor: pointer;
+}
+#o{
+    cursor: pointer;
+}
+#p{
+    cursor: pointer;
+}
+#q{
+    cursor: pointer;
+}
+#r{
+    cursor: pointer;
+}
+#s{
+    cursor: pointer;
+}
+#t{
+    cursor: pointer;
+}
+#u{
+    cursor: pointer;
+}
+#v{
+    cursor: pointer;
+}
+#w{
+    cursor: pointer;
+}
+#scroll_bar{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    Overflow-x:hidden;
+}
+
 .buttons{
     position: absolute;
-    display: inline-block;
-    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 90%;
     height: 13%;
     top: 85%;
     bottom: 1%;
     left: 4.5%;
     text-align: center;
+    box-shadow: 1px 8px 14px 1px rgb(37, 36, 36);
+    padding: 2px;
+    border-radius: 30px;
 }
 
 .camera{
     position: absolute;
-    width:  380px;
+    display: grid;
+    width:  370px;
     height: 360px;
-    left: 73%;
+    left: 72%;
     top: 1%;
     border: 2px solid black;
     text-align: center;
 }
 .options{
     position: absolute;
-    width: 380px;
-    height: 44%;
-    left: 73%;
-    top: 52%;
+    display: grid;
+    width: 370px;
+    height: 40%;
+    left: 72%;
+    top: 57%;
     border: 2px solid black;
     text-align: center;
 }
-.mute{
+/* #mute{
     position: absolute;
+   
     top: 20%;
     left: 2%;
     width: 40px;
     height: 40px;
 }
-.volume{
+#volume{
     position: absolute;
+   
     top: 20%;
     left: 8%;
     width: 40px;
     height: 40px;
+} */
+#playBtn{
+    display: flex;
+    font-size: 1rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+    background-color: black;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
-.play{
-    position: relative;
+#playBtn :hover{
+    color: grey;
+}
+#prev{
+    display: flex;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+}
+#prev :hover{
+    color: grey;
+}
+#next{
+    display: flex;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+}
+#next :hover{
+    color: grey;
+}
+#stop{
+    /* position: absolute;
+    
     top: 20%;
-    left: -5%;
-    width: 40px;
-    height: 40px;
+    right: 8%; */
+    /* width: 40px;
+    height: 40px; */
+    cursor: pointer;
 }
-.previous{
-    position: relative;
-    top: 20%;
-    left: 0%;
-    width: 40px;
-    height: 40px;
-}
-.next{
-    position: relative;
-    top: 20%;
-    left: 5%;
-    width: 40px;
-    height: 40px;
-}
-.stop{
+/* #shuffle{
     position: absolute;
     top: 20%;
-    right: 8%;
-    width: 40px;
-    height: 40px;
-}
-.shuffle{
-    position: absolute;
-    top: 20%;
+    
     left: 93%;
     width: 40px;
     height: 40px;
 }
+#song{
+    width: 40px;
+    height: 40px;
+    
+} */

@@ -8,55 +8,96 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap'" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+   
 </head>
 <body>
 
 
-
-
+    
     <div class="container"> 
-
+         <img src="{% static '/images/imag10.jpg' %}" alt="hehe" id="imag"> 
         <div class="music_player">  
 
             <div class="music">
-               <img src="{% static '/images/music.png' %}" alt="hehe" id="bg">  
-               
+               <img src="{% static '/images/imag1.jpg' %}" alt="hehe" id="bg">  
+             
             </div>
 
             <div class="buttons">
-                <button type = "button" class = "play">   
-                     pre
-                </button>
-
-                <button type = "button" class = "previous">   
-                     play
-                </button>
+                 <audio src="{% static 'music/0.mp3' %}" type = "audio/mp3" 
+                        1 ="{% static 'music/1.mp3' %}"
+                        0 ="{% static 'music/0.mp3' %}"
+                        2 ="{% static 'music/2.mp3' %}"
+                        3 ="{% static 'music/3.mp3' %}"
+                        4 ="{% static 'music/4.mp3' %}"
+                        5 ="{% static 'music/5.mp3' %}"
+                        6 ="{% static 'music/6.mp3' %}"
+                        7 ="{% static 'music/7.mp3' %}"
+                        8 ="{% static 'music/8.mp3' %}"
+                        9 ="{% static 'music/9.mp3' %}"
+                        10 ="{% static 'music/10.mp3' %}"
+                        11 ="{% static 'music/11.mp3' %}"
+                        12 ="{% static 'music/12.mp3' %}"
+                        13 ="{% static 'music/13.mp3' %}"
+                        14 ="{% static 'music/14.mp3' %}"
+                        15 ="{% static 'music/15.mp3' %}"
+                        16 ="{% static 'music/16.mp3' %}"
+                        17 ="{% static 'music/17.mp3' %}"
+                        18 ="{% static 'music/18.mp3' %}"
+                        19 ="{% static 'music/19.mp3' %}"
+                        20 ="{% static 'music/20.mp3' %}"
+                        21 ="{% static 'music/21.mp3' %}"
+                        22 ="{% static 'music/22.mp3' %}"
+                    ></audio>
                 
-                <button type = "button" class = "next">   
-                     next
-                </button>
+                <i class = "fas fa-backward" id = "prev" title = "previous"></i>
+                <i class = "fas fa-play" id = "playBtn" title = "play/pause"></i>
+                <i class = "fas fa-forward" id = "next" title = "next_song"></i>                
+                <i class = "fas fa-stop" id = "stop" title = "stop_music"></i>
+                <i class = "fas fa-volume-up" id = "vol-up" title = "vol-up"></i>
+               <i class = "fas fa-volume-down" id = "vol-down" title = "vol-down"></i>
+                <i class = "fas fa-volume-mute" id = "mute" title = "mute"></i>
+                
+                <i class = "fas fa-random" id = "shuffle" title = "shuffle"></i>
 
-                <button type = "button" class = "mute">   
-                     mute
-                </button>
-
-                <button type = "button" class = "volume">   
-                     vol
-                </button>
-
-                <button type = "button" class = "stop">   
-                     stop
-                </button>
-
-                <button type = "button" class = "shuffle">   
-                     shu
-                </button>
+                
                 
                
             </div>
 
             <div class="list">
-                music_list
+                
+                <div id = "scroll">
+                   <h4>Music List</h4>
+                   <div id = scroll_bar>
+                        <p id = "a" atr = "0" onclick = "click_on_particular('0')">0.mp3</p>
+                        <p id = "b" atr = "1" onclick = "click_on_particular('1')">1.mp3</p>
+                        <p id = "c" atr = "2" onclick = "click_on_particular('2')">2.mp3</p>
+                        <p id = "d" atr = "3" onclick = "click_on_particular('3')">3.mp3</p>
+                        <p id = "e" atr = "4" onclick = "click_on_particular('4')">4.mp3</p>
+                        <p id = "f" atr = "5" onclick = "click_on_particular('5')">5.mp3</p>
+                        <p id = "g" atr = "6" onclick = "click_on_particular('6')">6.mp3</p>
+                        <p id = "h" atr = "7" onclick = "click_on_particular('7')">7.mp3</p>
+                        <p id = "i" atr = "8" onclick = "click_on_particular('8')">8.mp3</p>
+                        <p id = "j" atr = "9" onclick = "click_on_particular('9')">9.mp3</p>
+                        <p id = "k" atr = "10" onclick = "click_on_particular('10')">10.mp3</p>
+                        <p id = "l" atr = "11" onclick = "click_on_particular('11')">11.mp3</p>
+                        <p id = "m" atr = "12" onclick = "click_on_particular('12')">12.mp3</p>
+                        <p id = "n" atr = "13" onclick = "click_on_particular('13')">13.mp3</p>
+                        <p id = "o" atr = "14" onclick = "click_on_particular('14')">14.mp3</p>
+                        <p id = "p" atr = "15" onclick = "click_on_particular('15')">15.mp3</p>
+                        <p id = "q" atr = "16" onclick = "click_on_particular('16')">16.mp3</p>
+                        <p id = "r" atr = "17" onclick = "click_on_particular('17')">17.mp3</p>
+                        <p id = "s" atr = "18" onclick = "click_on_particular('18')">18.mp3</p>
+                        <p id = "t" atr = "19" onclick = "click_on_particular('19')">19.mp3</p>
+                        <p id = "u" atr = "20" onclick = "click_on_particular('20')">20.mp3</p>
+                        <p id = "v" atr = "21" onclick = "click_on_particular('21')">21.mp3</p>
+                        <p id = "w" atr = "22" onclick = "click_on_particular('22')">22.mp3</p>
+                   </div>
+                </div>
             </div>
 
         </div>
@@ -66,9 +107,14 @@
         </div>
 
         <div class="camera">
-            camera
+            <img src="{% url 'video_feed' %}">
         </div>
 
     </div>
+
+
+  <script src="{% static 'javascript/buttons.js' %}" type="text/javascript"></script>  
+
+
 </body>
 </html>
